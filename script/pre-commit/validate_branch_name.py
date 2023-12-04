@@ -33,7 +33,7 @@ if branch_name is not None:
 else:
     print("Not in a Git repository or unable to determine the current branch.")
 
-if not is_valid_branch_name(branch_name):
+if is_valid_branch_name(branch_name):
     print("Invalid branch name:", branch_name)
     print(
         "Branch names must start with 'main', 'feature', 'fix', or 'hotfix' and may also contain the Jira issue "
